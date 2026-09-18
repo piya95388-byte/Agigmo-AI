@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="spark1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="spark2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="spark3" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+    <linearGradient id="spark4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="geminiGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#bgGrad)" stroke="#1f2937" stroke-width="2" />
+  <g filter="url(#geminiGlow)">
+    <path d="M100 100 C100 60, 90 40, 60 40 C90 40, 100 20, 100 0 C100 20, 110 40, 140 40 C110 40, 100 60, 100 100 Z" fill="url(#spark1)" transform="translate(0, 10) scale(0.85)" />
+    <path d="M100 100 C100 60, 90 40, 60 40 C90 40, 100 20, 100 0 C100 20, 110 40, 140 40 C110 40, 100 60, 100 100 Z" fill="url(#spark2)" transform="rotate(90 100 100) translate(0, 10) scale(0.85)" />
+    <path d="M100 100 C100 60, 90 40, 60 40 C90 40, 100 20, 100 0 C100 20, 110 40, 140 40 C110 40, 100 60, 100 100 Z" fill="url(#spark3)" transform="rotate(180 100 100) translate(0, 10) scale(0.85)" />
+    <path d="M100 100 C100 60, 90 40, 60 40 C90 40, 100 20, 100 0 C100 20, 110 40, 140 40 C110 40, 100 60, 100 100 Z" fill="url(#spark4)" transform="rotate(270 100 100) translate(0, 10) scale(0.85)" />
+  </g>
+  <circle cx="100" cy="100" r="14" fill="#ffffff" filter="url(#geminiGlow)" />
+  <circle cx="100" cy="100" r="6" fill="#111827" />
+</svg>
+
